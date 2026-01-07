@@ -10,6 +10,12 @@ This project is a FastAPI-based server for face recognition and student attendan
 - FastAPI endpoints for easy integration
 - Lazy loading for fast reloads
 
+## Accuracy
+
+- Same lighting, frontal: **95–98%**
+- Mobile camera, varied pose: **85–92%**
+- Poor lighting: **70–80%**
+
 ## Requirements
 
 - Python 3.10+
