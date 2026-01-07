@@ -34,7 +34,7 @@ This project is a FastAPI-based server for face recognition and student attendan
 
 1. **Start the server:**
    ```powershell
-   uvicorn main:app --reload
+   python -m uvicorn main:app --reload
    ```
 2. **API Endpoints:**
 
