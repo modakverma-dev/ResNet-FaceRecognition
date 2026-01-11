@@ -11,9 +11,9 @@ const Upload = ({ handleUpload, setFile, file, loading, image }) => {
           onChange={(e) => setFile(e.target.files[0])}
           className="file-input"
         />
-        <span className="file-text">
+        {/* <span className="file-text">
           {file ? file.name : 'Choose a photo...'}
-        </span>
+        </span> */}
       </label>
 
       <div className="actions">

@@ -2,11 +2,14 @@ import { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import Upload from './components/upload';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import Train from './components/train';
 
 function App() {
   const [file, setFile] = useState(null);
   const [image, setImage] = useState(null);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleUpload = async () => {
     if (!file) return;
@@ -30,15 +33,31 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <Upload
-        loading={loading}
-        handleUpload={handleUpload}
-        image={image}
-        setFile={setFile}
-        file={file}
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div className="app-container">
+            <button
+              onClick={() => {
+                navigate('/train');
+              }}
+              className="train-student-btn"
+            >
+              Train Student Image
+            </button>
+            <Upload
+              loading={loading}
+              handleUpload={handleUpload}
+              image={image}
+              setFile={setFile}
+              file={file}
+            />
+          </div>
+        }
       />
-    </div>
+      <Route path="/train" element={<Train />} />
+    </Routes>
   );
 }
 

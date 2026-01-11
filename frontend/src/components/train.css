@@ -1,0 +1,88 @@
+/* App.css */
+
+/* Main container */
+.app-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+}
+
+/* Heading */
+.app-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs */
+.app-container input[type='text'],
+.app-container input[type='file'] {
+  position: relative;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+.app-container input[type='text']:focus,
+.app-container input[type='file']:focus {
+  border-color: #007bff;
+}
+
+.file-text {
+  position: absolute;
+}
+
+/* Button */
+.app-container button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.app-container input {
+  background-color: #ffffff;
+}
+
+.app-container button:hover {
+  background-color: #0056b3;
+}
+
+.app-container button:disabled {
+  background-color: #7da5d9;
+  cursor: not-allowed;
+}
+
+/* Status text */
+.app-container p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Preview image */
+.app-container img {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
