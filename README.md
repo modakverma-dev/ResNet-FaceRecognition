@@ -36,5 +36,3 @@ A full-stack face recognition–based attendance system built with **FastAPI** (
 
 ---
 
-## 📁 Project Structure
-
