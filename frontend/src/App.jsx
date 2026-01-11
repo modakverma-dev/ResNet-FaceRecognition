@@ -17,7 +17,7 @@ function App() {
     formData.append('threshold', 0.55);
 
     try {
-      const res = await axios.post('http://127.0.0.1:8000/recognize', formData);
+      const res = await axios.post('http://localhost:8000/recognize', formData);
 
       if (res.data && res.data.processed_image) {
         setImage(`data:image/jpeg;base64,${res.data.processed_image}`);
