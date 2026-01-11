@@ -1,0 +1,14 @@
+node_modules
+
+.vite
+dist
+
+.env
+venv/
+
+# Git
+.git
+.gitignore
+
+# OS files
+.DS_Store
